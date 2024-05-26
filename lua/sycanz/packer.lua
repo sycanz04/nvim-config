@@ -10,12 +10,21 @@ return require('packer').startup(function(use)
     use "nvim-lua/plenary.nvim" -- don't forget to add this one if you don't have it yet!
     use 'christoomey/vim-tmux-navigator'
     use 'prichrd/netrw.nvim'
+    use 'nvim-tree/nvim-web-devicons'
+    use 'christoomey/vim-tmux-navigator'
 
     use {
         'nvim-telescope/telescope.nvim', tag = '0.1.6',
         -- or                            , branch = '0.1.x',
         requires = { {'nvim-lua/plenary.nvim'} }
     }
+
+    use({
+        "stevearc/oil.nvim",
+        config = function()
+            require("oil").setup()
+        end,
+    })
 
     use {
         "ThePrimeagen/harpoon",
