@@ -4,4 +4,4 @@ require("catppuccin").setup({
     term_colors = false, -- sets terminal colors (e.g. `g:terminal_color_0`)
 })
 
-vim.cmd.colorschem"catppuccin"
+vim.cmd.colorscheme "catppuccin"
