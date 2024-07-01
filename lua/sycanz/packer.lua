@@ -11,6 +11,7 @@ return require('packer').startup(function(use)
     use 'christoomey/vim-tmux-navigator'
     use 'prichrd/netrw.nvim'
     use 'nvim-tree/nvim-web-devicons'
+    use 'andweeb/presence.nvim'
 
     use {
         'nvim-telescope/telescope.nvim', tag = '0.1.6',
